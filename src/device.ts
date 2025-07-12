@@ -77,7 +77,9 @@ export default class Device {
       packet[0x26] = command;
       packet[0x28] = this.count & 0xff;
       packet[0x29] = (this.count >> 8) & 0xff;
-      [packet[0x2a], packet[0x2b], packet[0x2c], packet[0x2d], packet[0x2e], packet[0x2f]] = this.mac.reverse();
+      [packet[0x2a], packet[0x2b], packet[0x2c], packet[0x2d], packet[0x2e], packet[0x2f]] = Buffer.from(
+        this.mac,
+      ).reverse();
       [packet[0x30], packet[0x31], packet[0x32], packet[0x33]] = this.id;
 
       const payload = Buffer.concat([buffer, Buffer.alloc((((16 - buffer.length) % 16) + 16) % 16)]);
