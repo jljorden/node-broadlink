@@ -18,18 +18,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThomasTavernier/broadlink-iot.git"
+    "url": "git+https://github.com/jljorden/broadlink-iot.git"
   },
   "keywords": [
     "broadlink",
     "iot"
   ],
-  "author": "Thomas TAVERNIER <thomas@tavernier.dev> (https://github.com/ThomasTavernier)",
+  "author": "Thomas TAVERNIER <thomas@tavernier.dev> (https://github.com/jljorden)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ThomasTavernier/broadlink-iot/issues"
+    "url": "https://github.com/jljorden/broadlink-iot/issues"
   },
-  "homepage": "https://github.com/ThomasTavernier/broadlink-iot#readme",
+  "homepage": "https://github.com/jljorden/broadlink-iot#readme",
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.45",
@@ -45,6 +45,6 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@aksel/structjs": "^1.0.0"
+    "@aksel/structjs": "github:jljorden/structjs"
   }
 }
